@@ -1,0 +1,10 @@
+﻿  List.cpp
+  Main.cpp
+  Generating Code...
+e:\documents\c++\collection\collection\queue.cpp(104): warning C4715: 'Queue<int>::peek': not all control paths return a value
+e:\documents\c++\collection\collection\stack.cpp(78): warning C4715: 'Stack<int>::peek': not all control paths return a value
+e:\documents\c++\collection\collection\list.cpp(146): warning C4715: 'DoubleLinkedList<int>::peek': not all control paths return a value
+e:\documents\c++\collection\collection\list.cpp(48): warning C4172: returning address of local variable or temporary: begin
+e:\documents\c++\collection\collection\iterator.cpp(62): warning C4715: 'DoubleIterator<int>::operator*': not all control paths return a value
+e:\documents\c++\collection\collection\iterator.cpp(25): warning C4172: returning address of local variable or temporary: tmp
+  Collection.vcxproj -> E:\Documents\C++\Collection\x64\Debug\Collection.exe

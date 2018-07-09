@@ -6,7 +6,7 @@ template<class T>
 class Node
 {
 	T item;
-	Node* next_node;
+	Node<T>* next_node;
 
 public:
 	Node()
@@ -17,7 +17,7 @@ public:
 	Node(T _item) : item(_item), next_node(NULL) {}
 	Node(T _item, Node* _next) : item(_item), next_node(_next) {}
 
-	T value()
+	T& value()
 	{
 		return this->item;
 	}
@@ -26,7 +26,7 @@ public:
 		next_node = target;
 	}
 
-	Node* get_next() {
+	Node<T>* get_next() {
 		return next_node;
 	}
 };

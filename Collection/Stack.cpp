@@ -62,7 +62,7 @@ public:
 		}
 	}
 
-	void print() {
+	void print() const {
 		if (top == NULL) {
 			std::cout << "empty" << std::endl;
 		}
@@ -71,8 +71,10 @@ public:
 		}
 	}
 
-	T peek() {
-		return top->value();
+	T& peek() const {
+		if (top != NULL) {
+			return top->value();
+		}
 	}
 
 	Stack<T>* clone() const {

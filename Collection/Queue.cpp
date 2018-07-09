@@ -88,7 +88,7 @@ public:
 		}
 	}
 
-	void print() {
+	void print() const {
 		if (bottom == NULL) {
 			std::cout << "empty" << std::endl;
 		}
@@ -97,8 +97,10 @@ public:
 		}
 	}
 
-	T peek() {
-		return bottom->value();
+	T& peek() const {
+		if (bottom != NULL) {
+			return bottom->value();
+		}
 	}
 
 	Queue<T>* clone() const {
